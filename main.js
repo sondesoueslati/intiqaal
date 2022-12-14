@@ -206,6 +206,10 @@
     "#navbar ul li:not(.exception) a",
     "h2:not(#welcome, .section-heading, .section-title h2)",
     "span:not(#lang,.activities-items .act-item span, #flag, footer span)",
+<<<<<<< HEAD
+=======
+    ".right-item p",
+>>>>>>> aaeab3f (Translte new sections)
   ];
   // When the page content is ready...
   document.addEventListener("DOMContentLoaded", () => {
@@ -285,6 +289,8 @@
           } else if (tag.id == "send-us-msg") {
             tag.style.fontSize = "36px";
             tag.style.fontFamily = "var(--text-medium)";
+          } else if (el == ".right-item p") {
+            tag.style.fontFamily = "var(--text-light)";
           } else {
             tag.style.fontSize = "1.2rem";
 
