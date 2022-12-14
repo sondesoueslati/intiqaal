@@ -206,10 +206,7 @@
     "#navbar ul li:not(.exception) a",
     "h2:not(#welcome, .section-heading, .section-title h2)",
     "span:not(#lang,.activities-items .act-item span, #flag, footer span)",
-<<<<<<< HEAD
-=======
     ".right-item p",
->>>>>>> aaeab3f (Translte new sections)
   ];
   // When the page content is ready...
   document.addEventListener("DOMContentLoaded", () => {
