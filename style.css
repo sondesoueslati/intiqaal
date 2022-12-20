@@ -1,10 +1,3 @@
-/**
-* Template Name: Moderna - v4.9.1
-* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -148,6 +141,212 @@ a:hover {
 }
 
 
+/* newsletter */
+
+.newsletter {
+  margin: 0 auto;
+  width: 80%;
+  height: 350px;
+  border-radius: 3px;
+  position: relative;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -20px;
+  left: 40%;
+  text-align: center;
+  padding-top: 0.8rem;
+}
+
+.news-title {
+  /* margin: 0px; */
+  margin-top: 1rem;
+  font-size: 48px;
+  /* letter-spacing: 3px; */
+}
+
+.txt-holder {
+  margin: 0.5rem auto;
+  text-align: center;
+  width: 80%;
+}
+
+.txt-primary {
+  margin: 0.5rem auto;
+  font-size: 16px;
+}
+
+.txt-secondary {
+  color: var(--text);
+  font-size: 12px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.newsletter form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.news-form-control {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0.3rem;
+
+  width: 70%;
+}
+
+.dark .news-form-control {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* ::placeholder {
+  color: var(--text) !important;
+  font-size: 12px;
+  opacity: 0.6;
+} */
+
+.news-btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  margin: 0 0.5rem;
+  background-color: #f27b9b;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.news-btn:hover {
+  background-color: #f4648b;
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .newsletter {
+    width: 60%;
+    height: 350px;
+  }
+
+  .icon {
+    left: 45%;
+  }
+
+  .news-title {
+    font-size: 55px;
+  }
+
+  .txt {
+    font-size: 20px;
+  }
+
+  .news-form-control {
+    width: 200px;
+  }
+
+
+
+  .news-btn {
+    padding: 0.3rem 0.9rem;
+  }
+}
+
+@media (min-width: 769px) {
+  
+  .newsletter {
+    /* margin-top: 5rem; */
+    width: 50%;
+    height: 450px;
+  }
+
+  .icon {
+    padding-top: 1rem;
+    width: 80px;
+    height: 80px;
+    left: 45%;
+    top: -35px;
+  }
+
+  .news-title {
+    font-size: 60px;
+    margin-top: 12px;
+  }
+
+  .txt-holder {
+    margin-top: -1rem;
+  }
+
+  .txt-primary {
+    font-size: 24px;
+  }
+
+  .txt-secondary {
+    font-size: 20px;
+  }
+
+  .news-form-control {
+    padding: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  .news-btn {
+    padding: 1rem;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .newsletter form {
+    flex-direction: column !important;
+  }
+
+  .news-btn {
+    padding: 1rem 2rem;
+    font-size: 20px !important;
+    margin-top: 1rem !important;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .news-form-control {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .txt-holder {
+    width: 100%;
+  }
+
+  .txt-secondary {
+    width: 100%;
+    font-size: 16px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -525,7 +724,7 @@ a:hover {
 }
 
 section.devops-service {
-  padding-top: 0;
+  padding: 4rem 0;
   margin-top: 0;
 }
 
@@ -1922,8 +2121,12 @@ section.activities {
   margin-inline: 7rem;
   height: auto;
   padding-bottom: 3rem;
-  margin-top: 5rem !important;
+  /* margin-top: 5rem !important; */
   box-shadow: 1px 2px 9px 5px var(--bg);
+}
+
+section.activities .container {
+  padding: 0 !important;
 }
 
 .section-wrapper.container p:first-child {
