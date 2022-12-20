@@ -267,7 +267,8 @@ a:hover {
 }
 
 @media (min-width: 769px) {
-  
+
+
   .newsletter {
     /* margin-top: 5rem; */
     width: 50%;
@@ -3085,7 +3086,7 @@ iframe#map {
   --gray4: #454e56;
   --gray5: #2a2e35;
   --gray6: #12181b;
-  --blue: #0084a5;
+  --blue: #0dcaf0;
   --purple: #a82dd1;
   --yellow: #fff565;
   --primary: rgb(40, 54, 127);
