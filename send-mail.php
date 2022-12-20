@@ -18,7 +18,7 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
-$mail->Host = "	smtpout.secureserver.net";
+$mail->Host = "smtpout.secureserver.net";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 465;
 $mail->SMTPSecure = 'ssl';

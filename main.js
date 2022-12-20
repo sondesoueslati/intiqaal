@@ -109,7 +109,9 @@
       "devops-right3-content": `DevOps team can better serve the customers, incorporate the customer feedback in the future product iterations faster, leading to increased customer satisfaction`,
       "devops-right4": `Early defect detection leading to quality software development`,
       "devops-right4-content": `DevOps facilitates early detection of defects in the code and their subsequent resolution at a significantly faster rate, resulting in improvement in the overall quality of software`,
-      rights: "All Rights Reserved",
+      "rights": "All Rights Reserved",
+      "newsletter": "Newsletter",
+      "newsletter-content": "Subscribe to our newsletter to receive new updates about our services and be the first notified about our new offers!", 
     },
     // Arabic translations
     ar: {
@@ -197,7 +199,10 @@
       "devops-right3-content": `يمكن للفرق خدمة العملاء بشكل أفضل ، ودمج ملاحظات العملاء في تكرارات المنتج المستقبلية بشكل أسرع ، مما يؤدي إلى زيادة رضا العملاء`,
       "devops-right4": `الاكتشاف المبكر للعيوب مما يؤدي إلى تطوير برامج عالية الجودة`,
       "devops-right4-content": `يسهل الاكتشاف المبكر للعيوب في الكود وحلها اللاحق بمعدل أسرع بكثير ، مما يؤدي إلى تحسين الجودة الشاملة للبرنامج`,
-      rights: "كل الحقوق محفوظة",
+      "rights": "كل الحقوق محفوظة",
+      "newsletter": "النشرة البريدية",
+      "newsletter-content": "اشترك في النشرة البريدية لإنتقال لتلقي تحديثات جديدة حول خدماتنا وكن أول من يتم إخطاره بعروضنا الجديدة",
+       
     },
   };
   let elements = [
