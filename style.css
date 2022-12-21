@@ -387,10 +387,14 @@ a:hover {
 
 
 .wts-btn {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  z-index: 999;
+  /* position: fixed; */
+  /* right: 25px;
+  bottom: 25px; */
+  /* z-index: 999; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
   cursor: pointer;
 }
 
@@ -2057,6 +2061,15 @@ section.techstack {
 }
 
 
+.dark .get-started-container button,
+.dark .get-started-container button,
+.wc-header,
+.dark .wc-header,
+.wc-console #ellipse-2 {
+  color: #fff !important;
+
+}
+
 /* END MARKETS */
 
 
@@ -2811,6 +2824,9 @@ iframe#map {
 }
 
 .wts-btn img {
+  border-radius: 10px !important;
+  outline: unset !important;
+  border: none !important;
   width: 65px;
 }
 
@@ -3074,7 +3090,7 @@ iframe#map {
 }
 
 .square-holder:hover img {
-  filter: none;
+  filter: grayscale(0%) !important;
   transform: scale(1.2);
 }
 
