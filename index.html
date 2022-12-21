@@ -670,7 +670,7 @@
                         <span id="send-us-msg" style="font-size: 36px; font-family:'Din Medium'"
                             data-i18n-key="send-msg">Send A
                             Message</span>
-                        <form class="php-email-form" method="post" action="send-mail.php">
+                        <form class="php-email-form" method="post" action="send-mail.php" onsubmit="goto();">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" data-i18n-key="name"
@@ -694,13 +694,13 @@
                                 <div class="error-message"></div>
                                 <div class="sent-message" id="msgSend">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdoM5cjAAAAACGtXM4dJ8eA3Tqdi6cha9XqjHyE"></div>
+                            <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdoM5cjAAAAACGtXM4dJ8eA3Tqdi6cha9XqjHyE"  data-callback="recaptchaCallback"></div>
                         <br>
-                            <!--<div class="btn-wrapper">
+                    <div class="btn-wrapper">
                                 <button data-i18n-key="send" type="submit"
-                                    id=" btnSend"><span>Send</span></button>
-                                </div>-->
-                            <input type="submit" name="send" value="Send" class="btn btn-dark btn-block"> 
+                                    id=" btnSend" class="hidden"><span>Send</span></button>
+                                </div>
+                         
                         </form>
                         <h6 data-i18n-key="drop">Or Drop us a message via WhatsApp</h6>
                         <div class="wts-btn">
@@ -755,6 +755,14 @@
         // Get the container element
         var listContainer = document.querySelector("#navbar ul");
 
+        function recaptchaCallback() {
+            let btnSubmit = document.getElementById(' btnSend')
+
+        if ( btnSubmit.classList.contains("hidden") ) {
+            btnSubmit.classList.remove("hidden");
+            btnSubmitclassList.add("show");
+        }
+    }
         // Get all buttons with class="btn" inside the container
         var listItems = document.getElementsByClassName("nav-item-top");
 

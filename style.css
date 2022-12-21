@@ -29,7 +29,9 @@ body {
   background: var(--bg);
   transition: background 1000ms ease-in-out, color 300ms ease-in-out;
 }
-
+.hidden {
+  display: none;
+}
 section img:not(.square-holder img) {
   border-radius: 2rem;
   outline: 2px solid #fff
