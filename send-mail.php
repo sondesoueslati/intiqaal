@@ -22,7 +22,7 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
             if($response->success){
                
 
-            $to = "sales@intiqaal.com";
+            $to = "test@intiqaal.com";
             $toName = "Intiqaal";
 
 
@@ -36,8 +36,8 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
-            $mail->Username = "m.hadjsalem@intiqaal.com";
-            $mail->Password = "Amiri%%12";
+            $mail->Username = "test@intiqaal.com";
+            $mail->Password = "H0!G0&q92KjX";
 
             $mail->setFrom($email, "Admin");
             $mail->AddReplyTo($email, $name);
