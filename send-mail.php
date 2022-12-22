@@ -8,8 +8,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 $recaptcha = $_POST['g-recaptcha-response'];
-
-
+ 
 
 if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
     // reCAPTCHA validation
@@ -23,22 +22,22 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
             if($response->success){
                
 
-            $to = "sondes@beta-systemes.com";
+            $to = "sales@intiqaal.com";
             $toName = "Intiqaal";
 
 
             $mail = new PHPMailer(true);
-            
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             // echo 'iii',
             $mail->isSMTP();                
             $mail->SMTPAuth = true;
 
-            $mail->Host = "mail.beta-systemes.Com";
+            $mail->Host = "smtpout.secureserver.net";
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
-            $mail->Username = "sondes@beta-systemes.com";
-            $mail->Password = "cK4xz6i1";
+            $mail->Username = "m.hadjsalem@intiqaal.com";
+            $mail->Password = "Amiri%%12";
 
             $mail->setFrom($email, "Admin");
             $mail->AddReplyTo($email, $name);
@@ -54,19 +53,23 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
                                 "status" => "alert-success",
                                 "message" => "Your mail have been sent."
                             );
-                        } else {
+                        } 
+                        else {
                             $response = array(
                                 "status" => "alert-danger",
                                 "message" => "Robot verification failed, please try again."
                             );
                         }       
-                } else{ 
+                } 
+                else{ 
                     $response = array(
                         "status" => "alert-danger",
                         "message" => "Plese check on the reCAPTCHA box."
                     );
                 } 
-            }  else{ 
+            } 
+            
+            else{ 
                 $response = array(
                     "status" => "alert-danger",
                     "message" => "All the fields are required."

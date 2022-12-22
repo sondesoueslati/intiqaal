@@ -1,7 +1,7 @@
 <?php
 
 $email = $_POST["news-email"];
-$to = "sondes@beta-systemes.com";
+$to = "sales@intiqaal.com";
 $toName = "Intiqaal";
 require "vendor/autoload.php";
 
@@ -13,12 +13,12 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
-$mail->Host = "mail.beta-systemes.com";
+$mail->Host = "smtpout.secureserver.net";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 465;
 $mail->SMTPSecure = 'ssl';
-$mail->Username = "sondes@beta-systemes.com";
-$mail->Password = "cK4xz6i1";
+$mail->Username = "m.hadjsalem@intiqaal.com";
+$mail->Password = "Amiri%%12";
 
 $mail->setFrom($email, "Admin");
 $mail->AddReplyTo($email, "newsletter member");
