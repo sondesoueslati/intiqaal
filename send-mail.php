@@ -34,7 +34,7 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
 
             $mail->Host = "mail.beta-systemes.com";
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 465;
+            $mail->Port = 587;
             $mail->SMTPSecure = 'ssl';
             $mail->Username = "sondes@beta-systemes.com";
             $mail->Password = "cK4xz6i1";
