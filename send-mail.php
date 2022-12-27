@@ -47,7 +47,7 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
             $mail->Body = "Email: ".$email."\n Name: ".$name."\n Subject: ".$subject."\n Message: ".$message."\n";
 
             $mail->send();
-
+            header("Location: index.html"); 
             header("Location: index.html"); // Redirect after success 
                             $response = array(
                                 "status" => "alert-success",
